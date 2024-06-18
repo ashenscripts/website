@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 3 of ash's website</title>
+</head>
+<body>
+    <h1>welcome to page 3!</h1>
+    <hr>
+    <br>
+    <p>this section will be about <i>tables!</i></p>
+    <br>
+    <h4>Values</h4>
+
+    <table bgcolor="black">
+        <tr bgcolor="grey">
+            <th width="50">1</th>
+            <th width="50">2</th>
+            <th width="50">3</th>
+            <th width="50">4</th>
+            <th width="50">5</th>
+        </tr>
+        <tr bgcolor="lightgrey" align="center">
+            <td>Yes</td>
+            <td>No</td>
+            <td>Yes</td>
+            <td>No</td>
+            <td>Yes</td>
+        </tr>
+    </table>
+    <br>
+    <hr>
+    <p>alright, moving on to colors!</p>
+
+    <p style="color: red;"> <b>look at me, i'm red!</b></p>
+    <p style="color: orange;"> <b>i'm orange! :D</b></p>
+    <p style="color: yellow;"> <b>and i'm yellow! :D</b></p>
+    <hr>
+    <br>
+    <p>alright, now we've got <i>span</i> and <i>div</i></p>
+    <p>i can make <span style="color: #008b8b">this portion of this sentence </span>a different color! <span style="font-size: x-large;">this portion can also be unique!</span> all using span! </p>
+    <p>div can be used to do it to several paragraphs!</p>
+    <p>for example, i'll make a few different paragraphs unique</p>
+    <div style="background-color: aquamarine;">
+    <p>hi this is a test paragraph that i'll use for div</p>
+    <p>me too</p>
+    </div>
+    <hr>
+    <br>
+   <!-- <p>next up, iframes!</p>
+    <p>here you can see page 1!</p> <iframe style="border: 5" src="index.html" width="750" height="250">-->
+    <p>alright, now there's a button.</p>
+    <button onclick="doSomething()" id="button" style="border-radius: 5px;height:50px;width:200px;font-size: large;"><big>hi im a button</big></button>
+    <p id="text">this text might do something if you click the button..</p>
+    <script>
+        function doSomething(){
+            document.getElementById("text").innerHTML = "it did something, wow!";
+            document.getElementById("button").innerHTML = "now im a pressed button"
+        }
+    </script>
+
+</body>
+</html>
