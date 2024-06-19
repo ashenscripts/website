@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page 3 of ash's website</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>welcome to page 3!</h1>
@@ -59,6 +60,52 @@
             document.getElementById("button").innerHTML = "now im a pressed button"
         }
     </script>
+    <hr>
+    <br>
+
+    <form action="secretpage.html" method="GET">
+        <div>
+            <label for="pword">Password</label>
+            <input type="password" id="pword" name="pword" placeholder="please type password here" required>
+
+            <input type="checkbox" onclick="passwordVisibility()">Show Password
+
+            <script>
+            function passwordVisibility() {
+                var x = document.getElementById("pword");
+                if (x.type === "password") {
+                  x.type = "text";
+                  } else {
+                   x.type = "password";
+                 }
+                }               
+            </script>
+        </div>
+        
+        <div>
+            <label for="date">Birth Date</label>
+            <input type="date" id="date" name="date" placeholder="please type password here" required>
+        </div>
+
+        <div>
+            <input type="reset">
+            <input type="submit">
+        </div>
+    </form>
+    <br>
+    <a href ="index.html" target="_self" title="Go to page 1">
+        Go to home page
+    </a>
+    <br>
+    <br>
+    <a href ="page2.html" target="_self" title="Go to page 2">
+        Go to page 2
+    </a>
+    <br>
+    <br>
+    <a href ="page4.html" target="_self" title="Go to page 4">
+        Go to page 4
+    </a>
 
 </body>
 </html>
